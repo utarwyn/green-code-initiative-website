@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="contact">
-    <h2 class="heading-2">On discute d’ecoCode ?</h2>
+    <h2 class="heading-2">On discute ?</h2>
 
     <form @submit.prevent="submitForm" aria-label="Formulaire de contact">
       <div class="form-field" role="radiogroup" aria-labelledby="i-am">
@@ -185,7 +185,7 @@ const validateForm = () => {
 
   // Check if all validation functions return true.
   const isValid = validationFunctions.every((validationFunction) =>
-    validationFunction(),
+    validationFunction()
   );
 
   // Return true if all form fields are valid, otherwise return false.
@@ -219,7 +219,7 @@ function getCaptcha(response: any) {
 
 const type = ref("individu");
 const subject = ref(
-  "Je souhaite contribuer à la création de règles sur ecoCode",
+  "Je souhaite contribuer à la création de règles sur ecoCode"
 );
 const options = ref([
   "Je souhaite contribuer à la création de règles sur ecoCode",

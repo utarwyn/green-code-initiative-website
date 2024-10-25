@@ -17,30 +17,29 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 3.5rem 0;
-  gap: 2rem;
+  padding: 3rem 1rem;
+  gap: 1rem;
 
   > a {
-    opacity: 0.5;
     text-align: center;
     color: inherit;
     font-size: 1.5rem;
     font-weight: 900;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
 
     &.router-link-active {
-      opacity: 1 !important;
-      text-decoration: underline;
-      text-underline-offset: 15px;
+      background: rgba(0, 0, 0, 0.4);
     }
   }
 
   @media screen and (min-width: 796px) {
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   @media screen and (min-width: 960px) {
-    gap: 8rem;
+    gap: 6rem;
 
     > a {
       font-size: 2rem;

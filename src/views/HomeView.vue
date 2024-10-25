@@ -11,7 +11,7 @@ import AppSection from "@/components/shared/AppSection.vue";
   <AppHero
     variant="primary"
     title="Réduisons l'impact environnemental et social des solutions numériques"
-    sub-title="ecoCode est un outil Open Source basé sur un référentiel de règles d'éco-conception logicielle."
+    sub-title="Outil Open Source basé sur un référentiel de règles d'éco-conception logicielle"
   >
     <img
       class="hero"

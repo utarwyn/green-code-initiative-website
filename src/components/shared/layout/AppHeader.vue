@@ -20,12 +20,12 @@ const navItems = [
 const socialItems = [
   {
     label: "Suivez-nous sur Linkedin",
-    link: "https://linkedin.com/company/ecocode-io/",
+    link: "https://www.linkedin.com/company/green-code-initiative/",
     icon: LinkedinIcon,
   },
   {
     label: "Rejoignez notre Github",
-    link: "https://github.com/green-code-initiative/ecoCode",
+    link: "https://github.com/green-code-initiative",
     icon: GitHubIcon,
   },
   {
@@ -40,7 +40,10 @@ const socialItems = [
   <header>
     <div class="left">
       <router-link to="/" class="go-to-home">
-        <Logo width="148" height="24" alt="ecoCode logo" @click="closeMenu" />
+        <div class="logo-container">
+          <Logo width="148" height="24" alt="ecoCode logo" @click="closeMenu" />
+          <span class="association">par Green Code Initiative</span>
+        </div>
       </router-link>
       <nav :class="{ open: isMenuOpen }">
         <nav-item
@@ -90,6 +93,17 @@ header {
     display: flex;
     gap: 1rem;
     align-items: center;
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .association {
+    font-size: 0.75rem;
+    color: var(--color-on-surface-light);
   }
 
   .go-to-home,
