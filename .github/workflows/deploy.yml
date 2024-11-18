@@ -14,10 +14,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js 20.X
+      - name: Use Node.js 22.X
         uses: actions/setup-node@v4
         with:
-          node-version: 20.X
+          node-version: 22.X
           cache: npm
 
       - name: Install dependencies
@@ -48,7 +48,7 @@ jobs:
           name: website
 
       - name: Upload to SFTP
-        uses: wangyucode/sftp-upload-action@v2.0.2
+        uses: wangyucode/sftp-upload-action@v2.0.3
         with:
           host: ${{ secrets.UPLOAD_SFTP_HOST }}
           username: ${{ secrets.UPLOAD_SFTP_USERNAME }}
@@ -56,3 +56,5 @@ jobs:
           compress: true
           localDir: ${{ github.workspace }}
           remoteDir: ${{ secrets.UPLOAD_SFTP_DIRECTORY }}
+          exclude: "/api/,/.htaccess"
+          removeExtraFilesOnServer: true
