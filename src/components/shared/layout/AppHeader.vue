@@ -30,7 +30,7 @@ const socialItems = [
   },
   {
     label: "Rejoignez notre Slack",
-    link: "https://join.slack.com/t/ecocode-workspace/shared_invite/zt-2k95pq26e-0PKlnz3_ECd_ipp7kATrFQ",
+    link: "https://green-code-initiative.slack.com",
     icon: SlackIcon,
   },
 ];
