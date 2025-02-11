@@ -166,7 +166,7 @@ import AppSection from "@/components/shared/AppSection.vue";
 
 .event-banner-container {
   justify-self: center;
-  margin: 2rem;
+  margin: 2rem auto;
 }
 
 @media screen and (max-width: 768px) {
