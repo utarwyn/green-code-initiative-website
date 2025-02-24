@@ -32,7 +32,7 @@ const links = Object.entries(linkTypes)
   <div class="container">
     <div class="info">
       <img
-        :src="'/img/profil/' + member.profile"
+        :src="'/green-code-initiative-website/img/profil/' + member.profile"
         width="80"
         height="80"
         :alt="'Photo de profil ' + member.name"

@@ -1,27 +1,44 @@
-name: Deploy GitHub Pages
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code, upload it as artifact and deploy to Github Pages
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
+name: Build and deploy
 on:
   push:
-    branches: [main]
-    paths:
-      - ".github/pages/**"
-      - ".github/workflows/**"
+    branches: ["main"]
 
 jobs:
-  prepare:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
+      - name: Use Node.js 22.X
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.X
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Replace symlinks by the targeted file
+        run: find ./dist -type l -exec sh -c 'cp --remove-destination "$(readlink "{}")" "{}"' \;
       - name: Archive production artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.github/pages
+          path: ./dist
 
+  # Deploy job
   deploy:
-    runs-on: ubuntu-latest
-    needs: prepare
+    # Add a dependency to the build job
+    needs: build
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
@@ -33,6 +50,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
