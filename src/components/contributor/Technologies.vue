@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import technologies from "@/assets/data/technologies.json";
 
-const baseLogoUrl = "/img/tech/";
+const baseLogoUrl = "/green-code-initiative-website/img/tech/";
 </script>
 
 <template>

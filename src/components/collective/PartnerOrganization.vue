@@ -9,7 +9,9 @@ defineProps<{
   <div class="container">
     <div class="image">
       <img
-        :src="'/img/organizations/' + logo.filename"
+        :src="
+          '/green-code-initiative-website/img/organizations/' + logo.filename
+        "
         :width="logo.width"
         :height="logo.height"
         :alt="'Logo ' + name"
