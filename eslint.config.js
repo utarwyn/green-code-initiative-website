@@ -1,5 +1,6 @@
 import js from "@eslint/js";
 import pluginVue from "eslint-plugin-vue";
+import pluginVueA11y from "eslint-plugin-vuejs-accessibility";
 import ts from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 
@@ -7,6 +8,7 @@ export default [
   js.configs.recommended,
   ...ts.configs.recommended,
   ...pluginVue.configs["flat/strongly-recommended"],
+  ...pluginVueA11y.configs["flat/recommended"],
   {
     files: ["*.vue", "**/*.vue"],
     languageOptions: {

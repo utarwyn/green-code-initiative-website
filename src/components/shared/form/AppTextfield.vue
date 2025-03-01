@@ -9,13 +9,13 @@ withDefaults(
     type?: string;
     centered?: boolean;
   }>(),
-  { type: "text", modelValue: "", centered: false },
+  { type: "text", modelValue: "", centered: false }
 );
 </script>
 
 <template>
-  <div class="app-textfield">
-    <label :for="id" :class="centered ? 'centered' : ''">{{ label }}</label>
+  <label :for="id" :class="centered ? 'centered' : ''" class="app-textfield">
+    {{ label }}
     <input
       v-if="type !== 'textarea'"
       :value="modelValue"
@@ -35,7 +35,7 @@ withDefaults(
       :id="id"
       v-bind="$attrs"
     />
-  </div>
+  </label>
 </template>
 
 <style lang="scss">
@@ -44,15 +44,12 @@ withDefaults(
   flex-direction: column;
   gap: 0.5rem;
 
-  & > label {
-    color: var(--color-primary);
-    font-size: 18px;
-    font-weight: 900;
-    cursor: pointer;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 900;
 
-    &.centered {
-      text-align: center;
-    }
+  &.centered {
+    text-align: center;
   }
 
   & > input,

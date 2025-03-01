@@ -3,7 +3,7 @@
     <form @submit.prevent="submitForm" aria-label="Formulaire de contact">
       <div class="form-field" role="radiogroup" aria-labelledby="i-am">
         <span class="text-label" id="i-am">Je suis :</span>
-        <div class="radio-field">
+        <label for="individual" class="radio-field">
           <input
             type="radio"
             id="individual"
@@ -11,9 +11,9 @@
             v-model="type"
             value="individu"
           />
-          <label for="individual">Un individu</label>
-        </div>
-        <div class="radio-field">
+          Un individu
+        </label>
+        <label for="organization" class="radio-field">
           <input
             type="radio"
             id="organization"
@@ -21,8 +21,8 @@
             v-model="type"
             value="organisation"
           />
-          <label for="organization">Une organisation</label>
-        </div>
+          Une organisation
+        </label>
       </div>
 
       <Selectfield
@@ -124,7 +124,7 @@ const submitForm = async (event: Event) => {
 
 const type = ref("individu");
 const subject = ref(
-  "Je souhaite contribuer à la création de règles sur Creedengo",
+  "Je souhaite contribuer à la création de règles sur Creedengo"
 );
 const options = ref([
   "Je souhaite contribuer à la création de règles sur Creedengo",

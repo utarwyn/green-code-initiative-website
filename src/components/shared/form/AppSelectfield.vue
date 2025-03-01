@@ -10,8 +10,8 @@ defineProps<{
 </script>
 
 <template>
-  <div class="app-selectfield">
-    <label :for="id">{{ label }}</label>
+  <label :for="id" class="app-selectfield">
+    {{ label }}
     <div class="container">
       <select
         :value="modelValue"
@@ -30,7 +30,7 @@ defineProps<{
         ></path>
       </svg>
     </div>
-  </div>
+  </label>
 </template>
 
 <style scoped lang="scss">
@@ -39,12 +39,9 @@ defineProps<{
   flex-direction: column;
   gap: 0.5rem;
 
-  & > label {
-    color: var(--color-primary);
-    font-size: 18px;
-    font-weight: 900;
-    cursor: pointer;
-  }
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 900;
 
   & > .container {
     position: relative;

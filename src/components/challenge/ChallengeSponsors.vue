@@ -2,11 +2,14 @@
   <div class="sponsors">
     <div class="major-sponsor">
       <p>L’événement est <strong>sponsorisé</strong> par</p>
-      <img
-        src="@/assets/img/challenge/credit_agricole.webp"
-        width="360"
-        height="107"
-      />
+      <a href="https://www.credit-agricole.com" target="_blank">
+        <img
+          src="@/assets/img/challenge/credit_agricole.webp"
+          alt="Crédit Agricole"
+          width="360"
+          height="107"
+        />
+      </a>
     </div>
   </div>
 </template>
