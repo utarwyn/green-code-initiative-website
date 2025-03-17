@@ -5,23 +5,23 @@
       <div class="card">
         <h3>Open Source</h3>
         <p>
-          Participez à l’enrichissement du plugin SonarQube en contribuant
-          technologiquement avec l’ensemble des développeuses / développeurs.
+          Développez de nouvelles règles d’éco-conception pour SonarQube et
+          améliorez cet outil open source pour le développement responsable.
         </p>
       </div>
       <div class="card">
-        <h3>Green code</h3>
+        <h3>Promotion du Green Code</h3>
         <p>
-          La mission du collectif est d’outiller les développeuses /
-          développeurs pour faciliter la mise en œuvre de pratiques
-          d’eco-coding.
+          Sensibilisez la communauté tech à l’importance de l’éco-coding et
+          aidez-la à intégrer ces pratiques dans leurs projets.
         </p>
       </div>
       <div class="card">
-        <h3>Collaboration</h3>
+        <h3>Collaboration active</h3>
         <p>
-          La force de l’intelligence collective au profit de la co-construction
-          d’outils pour un numérique écoconçu.
+          Mettez à profit l'intelligence collective pour co-construire un
+          numérique plus respectueux de l’environnement et réduire son empreinte
+          carbone.
         </p>
       </div>
     </div>

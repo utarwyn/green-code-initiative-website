@@ -1,7 +1,7 @@
 <template>
   <div class="sponsors">
     <div class="major-sponsor">
-      <p>L’événement est <strong>sponsorisé</strong> par</p>
+      <p>L’événement est <strong>co-organisé</strong> avec</p>
       <a href="https://www.credit-agricole.com" target="_blank">
         <img
           src="@/assets/img/challenge/credit_agricole.webp"

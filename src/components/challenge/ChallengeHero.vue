@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CalendarIcon from "@/assets/icons/calendar.svg";
+import HeartHandshakeIcon from "@/assets/icons/heart_handshake.svg";
 import HourglassIcon from "@/assets/icons/hourglass.svg";
 import PinIcon from "@/assets/icons/pin.svg";
 </script>
@@ -13,7 +14,7 @@ import PinIcon from "@/assets/icons/pin.svg";
         </h1>
         <div class="registration">
           <HourglassIcon width="18" height="18" />
-          Inscriptions bientôt ouvertes
+          <span>RDV le <b>19/03</b> pour s'inscrire</span>
         </div>
       </div>
       <div class="meta-info">
@@ -26,9 +27,15 @@ import PinIcon from "@/assets/icons/pin.svg";
           La Belleviloise, 19-21 rue Boyer, 75020 Paris
         </a>
 
-        <div class="badge bold">
-          <CalendarIcon width="18" height="18" />
-          20 et 21 Mai 2025
+        <div class="line">
+          <div class="badge bold">
+            <CalendarIcon width="18" height="18" />
+            20 et 21 Mai 2025
+          </div>
+          <div class="badge">
+            <HeartHandshakeIcon width="18" height="18" />
+            Gratuit et ouvert à tous
+          </div>
         </div>
       </div>
     </div>
@@ -98,6 +105,16 @@ import PinIcon from "@/assets/icons/pin.svg";
       flex-direction: column;
       align-items: flex-start;
       gap: 0.5rem;
+
+      .line {
+        display: flex;
+        gap: 0.5rem;
+
+        @media screen and (max-width: 960px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
 
       .badge {
         display: flex;

@@ -14,11 +14,11 @@ import ChallengeSponsors from "@/components/challenge/ChallengeSponsors.vue";
         <div class="content">
           <h2>Une ambition</h2>
           <p>
-            Participez au hackathon de la Green Code Initiative et mettez vos
-            compétences au service d’un numérique plus responsable. Relevez des
-            <b>défis stimulants</b>, contribuez à un projet open source et
-            <b>agissez concrètement</b> pour réduire l’empreinte
-            environnementale du numérique.
+            Rejoignez-nous pour un <b>hackathon unique</b> où des passionnés de
+            tous horizons se réuniront pour faire avancer le numérique
+            responsable ! Nous avons tous un point commun : la volonté de
+            contribuer à un
+            <b>avenir numérique plus respectueux de l’environnement</b>.
           </p>
         </div>
       </div>

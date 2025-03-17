@@ -1,7 +1,7 @@
 [
   {
     "name": "Justin Berque",
-    "company": "Webwag",
+    "company": "Webwag Mobile",
     "profile": "justin_berque.webp",
     "links": {
       "linkedin": "justin-berque-444412140",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Jean-Yves Cronier",
-    "company": "Crédit Agricole Payment Services ",
+    "company": "Crédit Agricole Payment Services",
     "profile": "jean-yves_cronier.webp",
     "links": {
       "linkedin": "jean-yves-cronier-ba3b7a18",
@@ -26,16 +26,8 @@
     }
   },
   {
-    "name": "Mikaël Picard",
-    "company": "Aubay",
-    "profile": "mikael_picard.webp",
-    "links": {
-      "github": "MP-Aubay"
-    }
-  },
-  {
     "name": "Vianney de Bellabre",
-    "company": "Bouygues",
+    "company": "C2S Bouygues",
     "profile": "vianney_de_bellabre.webp",
     "links": {
       "github": "Djoums"

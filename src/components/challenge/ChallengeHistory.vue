@@ -132,7 +132,8 @@ import PinIcon from "@/assets/icons/pin.svg";
 
         .links {
           display: flex;
-          gap: 2rem;
+          flex-wrap: wrap;
+          gap: 0.5rem 2rem;
           font-weight: 700;
 
           a {
@@ -141,6 +142,7 @@ import PinIcon from "@/assets/icons/pin.svg";
             gap: 0.25rem;
             color: hsl(var(--text-neutral));
             text-decoration: underline;
+            white-space: nowrap;
           }
         }
       }
