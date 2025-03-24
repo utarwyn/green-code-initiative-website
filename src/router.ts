@@ -1,4 +1,8 @@
-import type { NavigationHookAfter, RouterOptions } from "vue-router";
+import type {
+  NavigationGuard,
+  NavigationHookAfter,
+  RouterOptions,
+} from "vue-router";
 import HomeView from "./views/HomeView.vue";
 
 export const routes: RouterOptions["routes"] = [
@@ -41,6 +45,13 @@ export const routes: RouterOptions["routes"] = [
     component: () => import("./views/ChallengeView.vue"),
   },
 ];
+
+export const navigationGuard: NavigationGuard = (to) => {
+  // redirect old URLs using hash navigation to new ones
+  if (to.hash?.startsWith("#/")) {
+    return to.hash.slice(2);
+  }
+};
 
 export const navigationHookAfter: NavigationHookAfter = (to) => {
   if (to.hash) {
